@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.titleBar {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.chevron {
+    transition: all 0.2s;
+    font-size: 36px;
+}
+.chevronClose {
+    transform: rotate(180deg);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+.hr {
+    width: 100%;
+}
