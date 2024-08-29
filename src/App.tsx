@@ -1,4 +1,4 @@
-import { Accordion, ComponentWithinComponent, DerivedState, Memoization, EffectDependencies } from './components';
+import { Accordion, PsuedoComponentWithinComponent, ComponentWithinComponent, DerivedState, Memoization, EffectDependencies } from './components';
 import './App.css';
 
 function App() {
@@ -6,6 +6,9 @@ function App() {
     <div className="App">
       <Accordion title="Component within component">
         <ComponentWithinComponent />
+      </Accordion>
+      <Accordion title="Psuedo Component within component">
+        <PsuedoComponentWithinComponent />
       </Accordion>
       <Accordion title="Derived State">
         <DerivedState />
