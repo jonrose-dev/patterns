@@ -1,6 +1,6 @@
 import { FC, useState } from "react"
 import classes from './index.module.css';
-import { ReactComponent as Chevron } from '../../svgs/chevron-up.svg';
+import Chevron from '../../svgs/chevron-up.svg';
 
 type Props = {
     title: string;
@@ -14,14 +14,14 @@ export const Accordion: FC<Props> = ({ title, children }) => {
         <div className={classes.wrapper}>
             <div className={classes.titleBar} onClick={handleClick}>
                 <h2>{title}</h2>
-                <div style={{ transform: isOpen ? 'rotate(180deg)' : 'inherit'}} className={classes.chevron}>
-                    <Chevron fontSize="36px" />
+                <div style={{ transform: isOpen ? 'rotate(180deg)' : 'inherit' }} className={classes.chevron}>
+                    <Chevron />
                 </div>
             </div>
             <div className={classes.content}>
                 {isOpen && children}
             </div>
-            <hr className={classes.hr}/>
+            <hr className={classes.hr} />
         </div>
     )
 

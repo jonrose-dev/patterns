@@ -10,23 +10,30 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
+    "vite": "^5.4.2",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^5.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "tsc & vite build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "engines": {
+    "pnpm": ">=8.9.0",
+    "node": ">=20.9.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
   },
   "browserslist": {
     "production": [
